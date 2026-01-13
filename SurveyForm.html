@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+
+        .survey {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .input {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            margin: 0px 0px;
+            padding: 10px;
+            border: 0px;
+
+
+        }
+
+        .btn {
+            background-color: deepskyblue;
+            color: white;
+            font-weight: bold;
+            padding: 10px 60px;
+            border-radius: 10px;
+            
+        }
+
+        .text {
+            width: 90%;
+            padding: 10px;
+
+        }
+
+        input,
+        select,
+        label,
+        p {
+            margin: 10px;
+
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="survey">
+            <h1>Survey Form</h1>
+
+            <form action="#" method="post">
+                <input class="text" type="text" placeholder="Enter your name">
+                <br>
+                <input class="text" type="text" placeholder="Enter your Email">
+
+                <br>
+
+                <input class="text" type="text" placeholder="Enter your Age">
+                <select name="role" id="role" class="text">
+                    <option value="Student">Student</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Jobseeker">Job Seeker</option>
+                </select>
+
+                <br>
+                <p>Would you recommend this survey form to a friend?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="recommend">
+                <br>
+                <label for="no">No</label>
+                <input type="radio" id="no" name="recommend">
+                <br>
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="recommend">
+
+
+                <br>
+                <p>Languages and Frameworks known (Check all that apply)</p>
+                <label for="java">Java</label>
+                <input type="checkbox" id="java">
+                <br>
+                <label for="python">Python</label>
+                <input type="checkbox" id="python">
+                <br>
+                <label for="django">Django</label>
+                <input type="checkbox" id="django">
+                <br>
+                <label for="react">React</label>
+                <input type="checkbox" id="react">
+
+
+                <br>
+                <label for="comment" style="margin-top: 10px;  display: block;">Any Comments or Suggestion </label>
+
+                <input type="text" id="comment" class="text">
+
+
+                <br>
+                
+                <button type="button" class="input btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
