@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(124, 124, 252)
+        }
+
+        .trafficLight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         
+            height: 90%;
+        }
+
+        .l {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 20px;
+        }
+
+        .green {
+            background-color: green;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .light {
+            height: 400px;
+            width: 150px;
+            background-color: black;
+            border-radius: 10px;
+     
+           
+        }
+
+        .rod {
+            height: 100%;
+            width: 50px;
+            background-color: black;
+            position: relative;
+            bottom: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="trafficLight">
+            <div class="light">
+                <div class="red l"></div>
+                <div class="green l"></div>
+                <div class="yellow l"></div>
+            </div>
+            <div class="rod"></div>
+        </div>
+    </div>
+</body>
+
+</html>
