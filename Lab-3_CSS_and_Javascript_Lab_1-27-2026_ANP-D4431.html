@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Lab-3_CSS_and_Javascript_Lab_1-27-2026_ANP-D4431.css">
+</head>
+
+<body>
+    <div class="main-1">
+        <div class="main-2">
+            <h1 class="firstHead">Check Number Assignment</h1>
+            <button class="Checkbutton" onclick="checkNumber(a)">Check Number</button>
+        </div>
+    </div>
+</body>
+<script>
+    let a = prompt('Enter a number:')
+    function checkNumber(a) {
+        if (a < 0) {
+            alert('Negative number');
+        }
+        else if (a > 0) {
+            alert('Positive number')
+        }
+
+        else if (a == 0) {
+            alert("Entered number is  0")
+        }
+        else {
+            alert("Entered number is not a valid number")
+        }
+    }
+</script>
+
+</html>
