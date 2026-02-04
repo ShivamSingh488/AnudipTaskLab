@@ -1,0 +1,86 @@
+ *{
+            margin: 0px;
+            border: none;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        
+          .EntireScreen{
+          width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+     }
+     .heading{
+        font-weight:bolder;
+        font-size:50px;
+     }
+        .mainContainer {
+            width: 70%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            border: 5px solid red;
+
+        }
+
+        .firstContainer {
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .secondContainer {
+
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .firstContainerChildOne {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2px;
+            width: 350px;
+            height: 350px;
+        }
+
+        .box {
+            display: grid;
+            background-color: red;
+            align-items: center;
+            justify-items: center;
+            cursor: pointer;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .firstContainerChildSecond {
+            background-color: red;
+            color: rgb(26, 9, 9);
+            padding: 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 150px;
+            font-weight: bolder;
+        }
+
+        .showResult,
+        .showTurn {
+            color: green;
+            font-weight: bolder;
+            font-size: 35px;
+        }
